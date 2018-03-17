@@ -319,12 +319,13 @@ namespace Landis.Library.BiomassCohorts
             for (int i = cohortData.Count - 1; i >= 0; i--) {
                 Cohort cohort = new Cohort(species, cohortData[i]);
                 int reduction = disturbance.ReduceOrKillMarkedCohort(cohort);
+               // Console.WriteLine("  Reduction: {0}, {1} yrs, {2} Mg/ha", cohort.Species.Name, cohort.Age, cohort.Biomass);
                 if (reduction > 0) {
                     totalReduction += reduction;
                     if (reduction < cohort.Biomass) {
                         cohort.ChangeBiomass(-reduction);
                         cohortData[i] = cohort.Data;
-                        //ReduceCohort(i, cohort, disturbance.CurrentSite,disturbance.Type, reduction);
+                        ReduceCohort(i, cohort, disturbance.CurrentSite,disturbance.Type, reduction);
                         //Console.WriteLine("  Partial Reduction: {0}, {1} yrs, {2} Mg/ha", cohort.Species.Name, cohort.Age, cohort.Biomass);
                         
                     }
