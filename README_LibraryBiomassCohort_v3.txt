@@ -3,13 +3,13 @@ Project:		LANDIS-II Landscape Change Model
 Project Component:	Library-Biomass-Cohort
 Component Deposition:	https://github.com/LANDIS-II-Foundation/Library-Biomass-Cohort
 Author:			LANDIS-II Foundation
-Origin Date:		6 July 2018
-Final Date:		6 July 2018
+Origin Date:		31 May 2017
+Final Date:		31 May 2017
 
 
 Welcome to the source code repository for Library-Biomass-Cohort, a LANDIS-II supplemental library.
 
-The "Landis.Library.BiomassCohorts-v3.dll" is the current version of this library.
+The "Landis.Library.BiomassCohorts-v2.dll" is the current version of this library.
 
 
 

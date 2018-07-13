@@ -1,29 +1,41 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <RootNamespace>Landis.Library.BiomassCohorts</RootNamespace>
-    <AssemblyName>Landis.Library.BiomassCohorts-v2</AssemblyName>
-    <AssemblyTitle>Landis.Library.BiomassCohorts</AssemblyTitle>
+    <AssemblyName>Landis.Library.BiomassCohorts-v3</AssemblyName>
+    <AssemblyTitle>Landis.Library.BiomassCohorts-v3</AssemblyTitle>
+    <AssemblyCompany>LANDIS-II Foundation</AssemblyCompany>
+    <AssemblyProduct>Landis.Library.BiomassCohorts-v3</AssemblyProduct>
     <AssemblyDescription>Biomass Cohort Library</AssemblyDescription>
-    <AssemblyVersion>1.3</AssemblyVersion>
+    <AssemblyCopyright>Landis-II-Foundation</AssemblyCopyright>    
+    <AssemblyVersion>3.0</AssemblyVersion>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Authors>LANDIS-II Foundation</Authors>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Product>Biomass Cohort Library</Product>
-    <Copyright>LANDIS-II Foundation</Copyright>
-    <PackageLicenseUrl>https://sites.google.com/site/landismodel/home</PackageLicenseUrl>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <RepositoryUrl>https://github.com/LANDIS-II-Foundation/Library-Biomass-Cohort</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>LANDIS-II;Landis;Library;Biomass Cohort</PackageTags>
+    <PackageLicenseUrl>https://github.com/LANDIS-II-Foundation/Library-Biomass-Cohort/blob/master/LICENSE</PackageLicenseUrl>            
+    <PackageLicenseUrl>http://www.landis-ii.org</PackageLicenseUrl>
     <NeutralLanguage>English</NeutralLanguage>
+    <Authors>LANDIS-II Foundation</Authors>
+    <Product>Biomass Cohort Library</Product>
+    <Copyright>LANDIS-II Foundation</Copyright>
+    <Version>3.0</Version>
+    <PackageTags>LANDIS-II;Landis;Library;Biomass Cohort</PackageTags>
+    <Description>The biomass cohort library supports Biomass Succession.  Each cohort has an additional property: aboveground biomass (g m-2)</Description>
+    <PackageReleaseNotes>.NET Standard 2.0 update.</PackageReleaseNotes>
+    <FileVersion>7.0</FileVersion>
   </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="Landis.Core" Version="1.0.0" />
-    <PackageReference Include="Landis.Library.AgeOnlyCohorts" Version="1.0.0" />
-    <PackageReference Include="Landis.Library.Cohorts" Version="1.0.0" />
-    <PackageReference Include="Landis.Utilities" Version="1.0.0" />
-    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Landis.Core" Version="2.0.0" />
   </ItemGroup>
+
   <ItemGroup>
-    <Folder Include="Properties\" />
+    <Reference Include="Landis.Library.AgeOnlyCohorts-v3">
+      <HintPath>lib\Landis.Library.AgeOnlyCohorts-v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Landis.Library.Cohorts-v2">
+      <HintPath>lib\Landis.Library.Cohorts-v2.dll</HintPath>
+    </Reference>
   </ItemGroup>
+  
 </Project>
